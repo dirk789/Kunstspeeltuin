@@ -6,7 +6,7 @@ import styles from './index.module.scss'
 
 type Props = {
   children: ReactNode
-  className: string
+  className?: string
 }
 
 const Card = ({className, children}: Props) => (
@@ -14,3 +14,5 @@ const Card = ({className, children}: Props) => (
     {children}
   </div>
 )
+
+export { Card }

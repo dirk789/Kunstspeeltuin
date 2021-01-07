@@ -2,4 +2,13 @@
   background: var(--secondary);
   color: var(--primary);
   text-align: center;
+  padding: 16px 32px;
+
+  > p:first-of-type {
+    margin-top: 12px;
+  }
+
+  > p:last-of-type {
+    margin-bottom: 16px;
+  }
 }

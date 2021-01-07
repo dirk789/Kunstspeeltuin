@@ -11,6 +11,8 @@ export type Props = {
   className?: string
   isLarge?: boolean
   bodyText?: string
+  withoutButton?: boolean
+  hasBackButton?: boolean
   children: ReactNode
 }
 
@@ -18,7 +20,9 @@ const Navigation = ({
   className,
   isLarge,
   children,
-  bodyText
+  withoutButton,
+  bodyText,
+  hasBackButton
 }: Props) => {
   return (
     <header className={classnames(styles.header, className)} data-is-large={isLarge || undefined}>
@@ -30,7 +34,7 @@ const Navigation = ({
         <h1>{children}</h1>
         <p>{bodyText}</p>
 
-        <Button>Bekijk Nu</Button>
+        {!withoutButton && <Button>Bekijk Nu</Button>}
        
       </Container>
     </header>

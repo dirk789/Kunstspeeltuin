@@ -9,7 +9,7 @@ type SliderArgs = {
 }
 
 type Props = {
-  data: SliderArgs
+  data: Array<SliderArgs>
 }
 
 const Slider = ({data}: Props) => {

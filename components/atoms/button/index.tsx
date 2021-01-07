@@ -3,12 +3,14 @@ import styles from './index.module.scss'
 
 import classnames from 'classnames'
 
+import Link from 'next/link'
+
 type Props = {
   children: ReactNode
   style?: CSSProperties
   className?: string
   href?: string
-  isBlock?: string
+  isBlock?: boolean
 }
 
 const Button = ({href, style, className, children, isBlock}: Props) => {
