@@ -1,0 +1,14 @@
+@import './../../../pages/css/_variables.scss';
+
+.button {
+  background: var(--primary);
+  padding: 10px;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 4px;
+
+  &[data-is-block] {
+    display: block;
+  }
+}

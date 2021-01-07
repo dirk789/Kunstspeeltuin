@@ -1,0 +1,34 @@
+@import './../../../pages/css/_variables.scss';
+
+.header {
+  background-color: $secondary;
+  padding-bottom: 12px;
+
+  svg {
+    margin-top: 24px;
+    width: 38px;
+    transform: scale(1.5);
+    transform-origin: left center;
+  }
+
+  a {
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  p {
+    margin-top: 20px;
+    font-weight: 300;
+  }
+}
+
+.hamburger {
+  max-width: 20px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.menuContainer {
+  width: 100%;
+}

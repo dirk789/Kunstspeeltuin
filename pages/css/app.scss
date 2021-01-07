@@ -1,0 +1,36 @@
+@import './reset';
+@import './variables';
+
+:root {
+  --primary: #2f433f;
+  --secondary: #f5fcfb;
+}
+
+body {
+  font-family: 'sofia-pro', sans-serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 36px;
+  font-style: normal;
+  line-height: 1.1em;
+  color: #2f433f;
+}
+
+h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 300;
+}

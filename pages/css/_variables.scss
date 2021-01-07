@@ -1,0 +1,14 @@
+$primary: #f5fcfb;
+$secondary: #f5fcfb;
+
+@mixin desktop {
+  @media (min-width: 1024) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 1023) {
+    @content;
+  }
+}

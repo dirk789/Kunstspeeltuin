@@ -1,38 +1,40 @@
 // pages/index.tsx
-import { GetServerSideProps, NextPage } from 'next'
+import { NextPage } from 'next'
+import { CSSProperties } from 'react'
 
-interface Props {
-  launch: {
-    mission: string
-    site: string
-    timestamp: number
-    rocket: string
-  }
-}
-const IndexPage: NextPage<Props> = ({ launch }) => {
-  const date = new Date(launch.timestamp)
+import { Button, Container } from './../components/atoms'
+import {Slider} from './../components/molecules'
+import { Navigation } from './../components/organisms'
+
+const IndexPage = ({ launch }) => {
   return (
     <main>
-      <h1>Next SpaceX Launch: {launch.mission}</h1>
-      <p>
-        {launch.rocket} will take off from {launch.site} on {date.toDateString()}
-      </p>
+      <section>
+        <Navigation bodyText="Bekijk nu een voorproefje van de installatie in 3D via jouw telefoon! Het is erg gemakkelijk en snel om dit via je telefoon te bekijken. Probeer de demo nu!">
+          Bekijk de installatie vanaf je telefoon!
+        </Navigation>
+      </section>
+      <section>
+        <Container>
+          <h2 style={{marginTop: 52}}>Bekijk Fiona's werk</h2>
+          <Slider 
+            data={[
+              {
+                name: 'Pickpockets',
+                image: <img src="//unsplash.it/500" />,
+                link: 'https://google.com'
+              },
+              {
+                name: 'Pickpockets',
+                image: <img src="//unsplash.it/500" />,
+                link: 'https://google.com'
+              }
+            ]}
+          />
+        </Container>
+      </section>
     </main>
   )
 }
 export default IndexPage
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  const response = await fetch('https://api.spacexdata.com/v3/launches/next')
-  const nextLaunch = await response.json()
-  return {
-    props: {
-      launch: {
-        mission: nextLaunch.mission_name,
-        site: nextLaunch.launch_site.site_name_long,
-        timestamp: nextLaunch.launch_date_unix * 1000,
-        rocket: nextLaunch.rocket.rocket_name,
-      },
-    },
-  }
-}

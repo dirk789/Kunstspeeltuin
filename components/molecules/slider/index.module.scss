@@ -1,0 +1,25 @@
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  min-width: 100%;
+  margin-top: 12px;
+  padding-bottom: 16px;
+
+  .slide {
+    img {
+      border-radius: 4px;
+      min-width: 206px;
+      max-height: 135px;
+      object-fit: cover;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import './../../../pages/css/_variables.scss';
+
+.container {
+  width: 95%;
+  max-width: 330px;
+  margin: 0 auto;
+  @include desktop {
+    max-width: 1170px;
+  }
+}
