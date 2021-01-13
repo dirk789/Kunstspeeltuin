@@ -1,0 +1,21 @@
+.payment {
+  .gridData {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+
+    > :nth-child(odd) {
+      font-weight: bold;
+    }
+  }
+
+  .formColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+}

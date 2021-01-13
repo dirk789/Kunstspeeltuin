@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 import { NewsArticle } from './../../organisms/newsArticle'
 
 type SliderArgs = {
-  name: string
+  name?: string
   image: JSX.Element
   popUpContent?: JSX.Element
   link?: string
@@ -13,9 +13,10 @@ type SliderArgs = {
 
 type Props = {
   data: Array<SliderArgs>
+  hasNoPopup?: boolean
 }
 
-const Slider = ({data}: Props) => {
+const Slider = ({data, hasNoPopup}: Props) => {
 
   const [openPopup, setOpenPopup] = useState(undefined)
 
@@ -23,14 +24,16 @@ const Slider = ({data}: Props) => {
   return (
     <div className={styles.slider}>
       {data.map((slide, i) => (
-        <div className={styles.slide} onClick={() => setOpenPopup(i)}>
-          {slide.image}
-          <p>{slide.name}</p>
-        </div>
+        <a href={slide.link}>
+          <div className={styles.slide} onClick={() => setOpenPopup(i)}>
+            {slide.image}
+            <p>{slide.name}</p>
+          </div>
+        </a>
 
       ))}
 
-        {openPopup != undefined &&
+        {(openPopup != undefined && !hasNoPopup) &&
         <NewsArticle title={data[openPopup].name} onCloseClick={() => setOpenPopup(undefined)}>
             {data[openPopup].image}
             {data[openPopup].popUpContent && data[openPopup].popUpContent}

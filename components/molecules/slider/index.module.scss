@@ -9,6 +9,8 @@
   margin-right: calc(-100vw / 2 + 343px / 2);
 
   .slide {
+    margin-right: 16px;
+
     img {
       border-radius: 4px;
       min-width: 206px;
@@ -19,10 +21,6 @@
     p {
       text-align: center;
       font-size: 16px;
-    }
-
-    &:not(:last-child) {
-      margin-right: 16px;
     }
   }
 }

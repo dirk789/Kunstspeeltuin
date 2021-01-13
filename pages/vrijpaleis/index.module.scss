@@ -19,4 +19,18 @@
       margin-bottom: 32px;
     }
   }
+
+  .day {
+    width: 124px;
+    height: 124px;
+    background: var(--secondary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
 }

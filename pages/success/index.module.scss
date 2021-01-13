@@ -1,0 +1,12 @@
+.success {
+  min-height: 100vh;
+  background: var(--secondary);
+  display: grid;
+  place-content: center;
+  text-align: center;
+
+  h1,
+  p {
+    margin-bottom: 32px;
+  }
+}
