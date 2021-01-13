@@ -1,0 +1,24 @@
+.newsArticle {
+  height: 100vh;
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background: white;
+}
+
+.innerContent {
+  padding: 0 16px;
+
+  > div > * {
+    /* Important has be be used to overwrite NExt image styles */
+    width: 100%;
+    height: 210px;
+  }
+
+  img {
+    padding-bottom: 16px;
+    object-fit: cover;
+  }
+}

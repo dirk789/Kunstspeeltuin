@@ -21,6 +21,21 @@
     margin-top: 20px;
     font-weight: 300;
   }
+
+  &[data-is-popup] {
+    padding-top: 32px;
+    > * > * {
+      display: inline;
+    }
+
+    svg {
+      margin-right: 16px;
+    }
+
+    h1 {
+      font-size: 21px;
+    }
+  }
 }
 
 .hamburger {
