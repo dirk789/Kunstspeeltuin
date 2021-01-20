@@ -5,6 +5,8 @@ import {Navigation} from './../../components/organisms'
 
 import style from './index.module.scss'
 
+import Img from 'next/image'
+
 const VRIntro = () => {
   return (
     <div className={style.vrIntro}>
@@ -30,7 +32,7 @@ const VRIntro = () => {
         </Number>   
 
         <a href="https://storage.googleapis.com/gnom-282304.appspot.com/Balloons.usdz#custom=https://kunstspeeltuin.vercel.app" rel="ar">
-          <img src="/public/images/Button.png" width={331} height={32} />
+          <Img src="/images/Button.png" width={331} height={32} />
         </a>
 
       </Container>
