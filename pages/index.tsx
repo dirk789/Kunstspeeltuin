@@ -14,7 +14,7 @@ const IndexPage = ({ launch }) => {
   return (
     <main>
       <section>
-        <Navigation buttonHref="/vr-intro" bodyText="Bekijk nu een voorproefje van de installatie in 3D via jouw telefoon! Het is erg gemakkelijk en snel om dit via je telefoon te bekijken. Probeer de demo nu!">
+        <Navigation buttonHref="/vr-intro" bodyText="Bekijk nu een voorproefje van de installatie in 3D via jouw telefoon! Het is erg gemakkelijk en snel om dit via je telefoon te bekijken. Probeer de demo nu! Onderweg? Luister dan naar Fiona's verhaal" button2Text="Luister nu" button2Href="/telefoongesprek">
           Bekijk de installatie vanaf je telefoon!
         </Navigation>
       </section>

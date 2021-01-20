@@ -23,7 +23,7 @@ const Telefoongesprek = () => {
           <p>Schrijf je in voor de tentoonstelling voor de volledige 3D evaring!</p>
         </Number>   
 
-        <Button isBlock>Ga door</Button>
+        <Button isBlock href="/audio">Ga door</Button>
 
       </Container>
 

@@ -9,7 +9,7 @@ const SuccessPage = () => {
     <div className={styles.success}>
       <Container>
       <h1>Success!</h1>
-      <p>We kijken er naar uit om u op <strong>21 februari 2020</strong> te zien.</p>
+      <p>We kijken er naar uit om u op <strong>21 februari 2021</strong> te zien.</p>
       <Button isBlock href="/">Ga terug</Button>
       </Container>
     </div>

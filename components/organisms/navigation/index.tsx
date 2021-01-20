@@ -17,6 +17,8 @@ export type Props = {
   isPopup?: boolean
   hasBackButton?: boolean
   buttonHref?: string
+  button2Text?: string
+  button2Href?: string
   onClick?: () => void
   children: ReactNode
 }
@@ -35,6 +37,8 @@ const Navigation = ({
   isPopup,
   buttonHref,
   hasBackButton,
+  button2Text,
+  button2Href,
   onClick
 }: Props) => {
 
@@ -51,6 +55,8 @@ const Navigation = ({
         <p>{bodyText}</p>
 
         {!withoutButton && <Button href={buttonHref} style={isPopup && {fontSize: 21}}>Bekijk Nu</Button>}
+
+        {button2Text && <Button href={button2Href} style={{marginLeft: 16}}>Luister naar haar verhaal</Button>}
        
       </Container>
 
