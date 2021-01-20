@@ -32,7 +32,7 @@ const VRIntro = () => {
         </Number>   
 
         <a href="https://storage.googleapis.com/gnom-282304.appspot.com/Balloons.usdz#custom=https://kunstspeeltuin.vercel.app" rel="ar">
-          <Img src="/images/Button.png" width={331} height={32} />
+          <img src="/images/Button.png" width={331} height={32} />
         </a>
 
       </Container>
