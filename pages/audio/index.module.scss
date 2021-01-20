@@ -1,0 +1,36 @@
+.audio {
+  background: var(--secondary);
+  min-height: 100vh;
+
+  [aria-label='Audio Player'] {
+    margin-bottom: 2rem;
+  }
+
+  .foto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    max-width: 100%;
+
+    img {
+      border-radius: 50%;
+      max-width: 210px;
+      max-height: 210px;
+      /* Overwrite Next Image */
+      border: 16px solid #868686 !important;
+    }
+
+    &[data-is-playing] {
+      animation: isPlaying 10s infinite linear;
+    }
+
+    @keyframes isPlaying {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

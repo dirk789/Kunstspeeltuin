@@ -1,6 +1,8 @@
 
 import './css/app.scss'
 import { AppProps } from 'next/app'
+import 'react-h5-audio-player/src/styles.scss'
+
 
 import Head from 'next/head'
 

@@ -36,6 +36,35 @@
       font-size: 21px;
     }
   }
+
+  nav {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    background: var(--primary);
+    z-index: 1;
+    color: white;
+    // animation: menu 0.6s;
+
+    ul {
+      margin-top: 64px;
+      font-size: 21px;
+
+      li + li {
+        margin-top: 32px;
+      }
+    }
+
+    @keyframes menu {
+      from {
+        transform: scale(0.8);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+  }
 }
 
 .hamburger {
