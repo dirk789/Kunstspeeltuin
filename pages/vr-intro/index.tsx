@@ -29,7 +29,9 @@ const VRIntro = () => {
           <p>Ben je klaar of voel je je niet goed? Zet dan je bril af en klik op het kruisje</p>
         </Number>   
 
-        <Button isBlock>Ga door</Button>
+        <a href="https://storage.googleapis.com/gnom-282304.appspot.com/Balloons.usdz#custom=https://kunstspeeltuin.vercel.app" rel="ar">
+          <img src="/public/images/Button.png" width={331} height={32} />
+        </a>
 
       </Container>
 
